@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7b8a4bd2ddd599dfd557b2b0596c2bdf21d413d6598a444de652d98d156b03e6
+-- hash: dfc1c54f609cfc02869efd52622b6afd246fd7c0122ae9f202ce7e909c51fe18
 
 name:           code-competitions
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      CodeWars.CategorizeNewMember
       CodeWars.DescendingOrder
       CodeWars.DisemvowelTrolls
       CodeWars.RecreationOne
@@ -57,6 +58,7 @@ test-suite code-competitions-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      CodeWars.CategorizeNewMemberSpec
       CodeWars.DescendingOrderSpec
       CodeWars.DisemvowelTrollsSpec
       CodeWars.RecreationOneSpec
