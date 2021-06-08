@@ -1,6 +1,6 @@
-name:                haskell-playground
+name:                code-competitions
 version:             0.1.0.0
-github:              "stesta/haskell-playground"
+github:              "stesta/code-competitions"
 license:             BSD3
 author:              "Steve Testa"
 maintainer:          "steve@testasoftware.com"
@@ -35,7 +35,7 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - haskell-playground
+    - code-competitions
 
 tests:
   haskell-playground-test:
@@ -46,4 +46,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - haskell-playground
+    - code-competitions

@@ -4,13 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: be7031fb828c3f6d86e9a402986a4f3c1ab92b3b24420a8b6d549b807524af46
+-- hash: 942806a8c2e9c034abb73db1ca77ea960a846a95c58f389f0808082ee6883d4a
 
-name:           haskell-playground
+name:           code-competitions
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/haskell-playground#readme>
-homepage:       https://github.com/stesta/haskell-playground#readme
-bug-reports:    https://github.com/stesta/haskell-playground/issues
+homepage:       https://github.com/stesta/code-competitions#readme
+bug-reports:    https://github.com/stesta/code-competitions/issues
 author:         Steve Testa
 maintainer:     steve@testasoftware.com
 copyright:      2021 Steve Testa
@@ -23,14 +23,11 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/stesta/haskell-playground
+  location: https://github.com/stesta/code-competitions
 
 library
-  exposed-modules:
-      Lib
-      SimpleJSON
   other-modules:
-      Paths_haskell_playground
+      Paths_code_competitions
   hs-source-dirs:
       src
   build-depends:
@@ -38,29 +35,29 @@ library
     , text
   default-language: Haskell2010
 
-executable haskell-playground-exe
+executable code-competitions-exe
   main-is: Main.hs
   other-modules:
-      Paths_haskell_playground
+      Paths_code_competitions
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , haskell-playground
+    , code-competitions
     , text
   default-language: Haskell2010
 
-test-suite haskell-playground-test
+test-suite code-competitions-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_haskell_playground
+      Paths_code_competitions
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , haskell-playground
+    , code-competitions
     , text
   default-language: Haskell2010
