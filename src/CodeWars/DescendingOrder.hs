@@ -1,3 +1,5 @@
+module CodeWars.DescendingOrder where
+
 import Data.List (sort)
 
 descendingOrder :: Integer -> Integer

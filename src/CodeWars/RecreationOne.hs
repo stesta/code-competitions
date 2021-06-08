@@ -1,3 +1,5 @@
+module CodeWars.RecreationOne where
+
 listSquared :: Int -> Int -> [(Int, Int)]
 listSquared m n = [(x,y) | x <- [m..n], let y = sumsqdiv (divisors x), isSquare y]
 

@@ -27,7 +27,7 @@ library:
   source-dirs: src
 
 executables:
-  haskell-playground-exe:
+  code-competitions-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -38,7 +38,7 @@ executables:
     - code-competitions
 
 tests:
-  haskell-playground-test:
+  code-competitions-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -47,3 +47,7 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - code-competitions
+    - vector
+    - hspec
+    - QuickCheck
+  
