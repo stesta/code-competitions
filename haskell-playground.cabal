@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 908baf0380b0d6375bb2e060781546056185a7fdad1a20b79e54cefea5df6fe1
+-- hash: be7031fb828c3f6d86e9a402986a4f3c1ab92b3b24420a8b6d549b807524af46
 
 name:           haskell-playground
 version:        0.1.0.0
@@ -28,12 +28,14 @@ source-repository head
 library
   exposed-modules:
       Lib
+      SimpleJSON
   other-modules:
       Paths_haskell_playground
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , text
   default-language: Haskell2010
 
 executable haskell-playground-exe
@@ -46,6 +48,7 @@ executable haskell-playground-exe
   build-depends:
       base >=4.7 && <5
     , haskell-playground
+    , text
   default-language: Haskell2010
 
 test-suite haskell-playground-test
@@ -59,4 +62,5 @@ test-suite haskell-playground-test
   build-depends:
       base >=4.7 && <5
     , haskell-playground
+    , text
   default-language: Haskell2010

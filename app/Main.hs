@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import Lib  
+import SimpleJSON
 
 main :: IO ()
-main = someFunc
+main = someFunc >>= print
