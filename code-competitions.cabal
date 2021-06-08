@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dfc1c54f609cfc02869efd52622b6afd246fd7c0122ae9f202ce7e909c51fe18
+-- hash: 07ced8046a7abf7f6167ca4c7951aa50127885d5248170fc2402479b63a333d1
 
 name:           code-competitions
 version:        0.1.0.0
@@ -30,7 +30,9 @@ library
       CodeWars.CategorizeNewMember
       CodeWars.DescendingOrder
       CodeWars.DisemvowelTrolls
+      CodeWars.ExesAndOhs
       CodeWars.RecreationOne
+      CodeWars.SumByFactors
       CodeWars.SumTheStrings
   other-modules:
       Paths_code_competitions
@@ -61,14 +63,17 @@ test-suite code-competitions-test
       CodeWars.CategorizeNewMemberSpec
       CodeWars.DescendingOrderSpec
       CodeWars.DisemvowelTrollsSpec
+      CodeWars.ExesAndOhsSpec
       CodeWars.RecreationOneSpec
+      CodeWars.SumByFactorsSpec
       CodeWars.SumTheStringsSpec
       Paths_code_competitions
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      QuickCheck
+      HUnit
+    , QuickCheck
     , base >=4.7 && <5
     , code-competitions
     , hspec

@@ -49,5 +49,6 @@ tests:
     - code-competitions
     - vector
     - hspec
+    - HUnit
     - QuickCheck
   
