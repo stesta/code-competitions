@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e69a7e057fa008a9cd02c48271f80c2ed2f87c0222c79134eff082c3cef184ae
+-- hash: a0c46a50a39122ae6532d3f7ee3467e52d459e64a1e84e603f3665441658e12f
 
 name:           code-competitions
 version:        0.1.0.0
@@ -31,6 +31,8 @@ library
       CodeWars.DescendingOrder
       CodeWars.DisemvowelTrolls
       CodeWars.ExesAndOhs
+      CodeWars.InfiniteDigitalString
+      CodeWars.Isomorphism
       CodeWars.PolyvariadicFunctions
       CodeWars.RecreationOne
       CodeWars.SumByFactors
@@ -65,6 +67,8 @@ test-suite code-competitions-test
       CodeWars.DescendingOrderSpec
       CodeWars.DisemvowelTrollsSpec
       CodeWars.ExesAndOhsSpec
+      CodeWars.InfiniteDigitalStringSpec
+      CodeWars.IsomorphismSpec
       CodeWars.PolyvariadicFunctionsSpec
       CodeWars.RecreationOneSpec
       CodeWars.SumByFactorsSpec
