@@ -24,7 +24,7 @@ substL = fst
 
 -- and vice versa
 substR :: ISO a b -> (b -> a)
-substR = error "do substR"
+substR = snd
 
 -- There can be more than one ISO a b
 isoBool :: ISO Bool Bool
@@ -48,7 +48,7 @@ trans = error "do trans"
 -- We can combine isomorphism:
 isoTuple :: ISO a b -> ISO c d -> ISO (a, c) (b, d)
 isoTuple (ab, ba) (cd, dc) = 
-  (\(a, c) -> (ab a, cd c), error "do isoTuple")
+  (\(a, c) -> (ab a, cd c), \(b, d) -> (ba b, dc d))
 
 isoList :: ISO a b -> ISO [a] [b]
 isoList = error "do isoList"
