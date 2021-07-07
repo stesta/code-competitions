@@ -1,9 +1,12 @@
 module CodeWars.InfiniteDigitalString where
 
 import Data.List ( findIndex, isPrefixOf, tails )
+import Data.Text (Text)
+import qualified Data.Text as T
+import Data.Text.Internal.Search
 
 findPosition :: String -> Int
-findPosition = position . search text
+findPosition = head . indices (T.pack text) . T.pack
     where 
         text = concatMap show [1..]
         position (Just x) = x
